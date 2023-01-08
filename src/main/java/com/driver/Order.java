@@ -1,5 +1,6 @@
 package com.driver;
 
+
 public class Order {
 
     private String id;
@@ -9,6 +10,8 @@ public class Order {
 
         // The deliveryTime has to converted from string to int and then stored in the attribute
         //deliveryTime  = HH*60 + MM
+        this.id=id;
+        this.deliveryTime= Integer.parseInt(deliveryTime);
     }
 
     public String getId() {
